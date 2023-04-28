@@ -1,17 +1,18 @@
+import{ Profile } from './profile/Profile';
+import{ Stats } from './profile/Stats';
+import user from '../user.json';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      <h1>1hw</h1>
-      
-    </div>
+    <>
+      <Profile
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+      />
+
+      <Stats stats={user.stats} />
+    </>
   );
 };
