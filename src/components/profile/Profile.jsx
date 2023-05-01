@@ -7,7 +7,7 @@ export const Profile = ({ username, tag, location, avatar }) => {
                 //   class="avatar"
                 />
                 <p>{username}</p>
-                <p>{tag}</p>
+                <p>@{tag}</p>
                 <p>{location}</p>
             </div>
 
