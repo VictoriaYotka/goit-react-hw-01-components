@@ -1,4 +1,5 @@
 export const TransactionHistory = ({items}) => (
+  <div>
 <table>
   <thead>
     <tr>
@@ -20,5 +21,6 @@ export const TransactionHistory = ({items}) => (
 
   </tbody>
 </table>
+</div>
 );
 
