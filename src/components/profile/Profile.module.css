@@ -1,6 +1,7 @@
 .profile {
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 20px;
     padding: 20px;
     display: inline-block;
 }
@@ -40,6 +41,7 @@
 .stats {
     padding: 10px;
     display: flex;
+    
     justify-content: space-around;
     background-color: bisque;
 }

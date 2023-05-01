@@ -1,14 +1,20 @@
+import css from './Statistics.module.css'
+
+const randomColor = () => {
+    return '#' + Math.floor(Math.random() * 2 ** 24).toString(16).padStart(6, '0')};
+
 export const Statistics = ({ title, stats }) => {
     return (
-        <section>
-        {title.length > 0 && (<h2>{title}</h2>)}
+        <section className={css.statistics}>
+        {title.length > 0 && (<h2 className={css.title}>{title}</h2>)}
         
-        <ul>
-            {stats.map(stat => <li key={stat.id}>
-                <span>{stat.label}</span>
-                <span>{stat.percentage}%</span>
+        <ul className={css.statlist}>
+            {stats.map(stat => <li key={stat.id} className={css.item} style={{ backgroundColor: randomColor() }}>
+                <span className={css.label}>{stat.label}</span>
+                <span className={css.percentage}>{stat.percentage}%</span>
             </li>)}
         </ul>
         </section>
     )
 }
+
