@@ -1,4 +1,4 @@
-import css from './TransactionsHistoru.module.css';
+import css from './TransactionsHistory.module.css';
 
 export const TransactionHistory = ({items}) => (
 <table className={css.transactionhistory}>

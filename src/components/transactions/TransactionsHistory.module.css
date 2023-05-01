@@ -1,9 +1,7 @@
 .transactionhistory {
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto 20px auto;
     background-color: bisque;
     width: 90%;
-
 }
 
 th {

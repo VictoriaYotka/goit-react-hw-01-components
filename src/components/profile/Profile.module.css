@@ -1,20 +1,19 @@
 .profile {
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 20px;
-    padding: 20px;
-    display: inline-block;
+    margin: 20px auto;
+    width: 320px;
 }
 
 .description {
-    
+    width: 100%;
     padding: 20px;
     text-align: center;
     background-color: beige;
-    display: inline-block;
+    
 }
 
 .avatar {
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: 10px;
     border-radius: 50%;
     border: 5px solid #000;
@@ -41,9 +40,15 @@
 .stats {
     padding: 10px;
     display: flex;
-    
+
     justify-content: space-around;
     background-color: bisque;
+}
+
+li {
+    flex-basis: 33%;
+    text-align: center;
+
 }
 
 .label {
