@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import css from './Statistics.module.css'
 
 const randomColor = () => {
@@ -16,5 +17,10 @@ export const Statistics = ({ title, stats }) => {
         </ul>
         </section>
     )
+}
+
+Statistics.propTypes = {
+    title: PropTypes.string, 
+    stats: PropTypes.array,
 }
 

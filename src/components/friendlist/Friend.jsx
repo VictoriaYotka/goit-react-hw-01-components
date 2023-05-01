@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import css from './Friend.module.css'
 
 export const Friend = ( friend ) => {
@@ -14,3 +15,11 @@ export const Friend = ( friend ) => {
         <p className={css.name}>{name}</p>
     </li>
 )};
+
+Friend.propTypes = {
+    friend: PropTypes.exact({
+        avatar: PropTypes.string,
+        name: PropTypes.string,
+        isOnline: PropTypes.bool.isRequired,
+    })
+}

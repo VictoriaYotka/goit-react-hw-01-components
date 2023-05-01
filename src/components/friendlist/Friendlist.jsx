@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import { Friend } from "./Friend";
 import css from './Friendlist.module.css'
 
@@ -7,3 +8,7 @@ export const Friendlist = ({friends}) => (
         
     </ul>
 );
+
+Friendlist.propTypes = {
+    friends: PropTypes.array,
+}
